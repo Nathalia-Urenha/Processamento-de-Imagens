@@ -4,7 +4,7 @@ from PIL import Image
 from numpy import asarray
 
 # converting image to grayscale
-image = Image.open('../Images/nathigor.jpg').convert('L')
+image = Image.open('../Images/Filo.jpg').convert('L')
 image.show()
 
 def main():
