@@ -34,7 +34,7 @@ def main():
     # values os a windows 5 X 5
     print(npImage[0:5, 0:5])
 
-    # invert the pixels
+    # 1° Inversão de Pixels Usando For
     print("Inverting the pixels...")
     x, y = npImage.shape
     for i in range(x):
