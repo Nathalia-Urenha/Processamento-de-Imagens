@@ -70,7 +70,7 @@ cv2.imwrite('../Images/quadrado_40.png', rotacionado)
 plt.figure(figsize=(6.4*5, 4.8*5), constrained_layout=False)
 
 img_rotacionada40 = cv2.imread('../Images/quadrado_40.png', 0)
-plt.subplot(151), plt.imshow(img_rotacionada40, "gray"), plt.title("Imagem Rotacionada")
+plt.subplot(151), plt.imshow(img_rotacionada40, "gray"), plt.title("Rotação 40º")
 
 img_fft_amplitude = np.fft.fft2(img_rotacionada40)
 plt.subplot(152), plt.imshow(np.log(1+np.abs(img_fft_amplitude)), "gray"), plt.title("Espectro Amplitude")
@@ -95,7 +95,7 @@ cv2.imwrite('../Images/quadrado_transladada.png', deslocado)
 
 plt.figure(figsize=(6.4*5, 4.8*5), constrained_layout=False)
 
-img_deslocada = cv2.imread('../Images/quadrado_transladado.png', 0)
+img_deslocada = cv2.imread('../Images/quadrado_transladada.png', 0)
 plt.subplot(151), plt.imshow(img_deslocada, "gray"), plt.title("Imagem Transladada")
 
 img_fft_amplitude = np.fft.fft2(img_deslocada)
